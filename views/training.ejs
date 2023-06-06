@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-sm-4">
+    <img src="/Pictures/t1.jpg" alt="">
+    <img src="/Pictures/t2.jpg" alt="">
+    <img src="/Pictures/t3.jpg" alt="">
+  </div>
+    <h1>Welcome to our Training Page!</h1>
+    <p> Here you will find out the ways we can help you train your pet to be the best pet they can be.</p>
+    <p> We only offer Dog Training at the moment as ristrictions apply with all other type of pets because of Covid-19.</p>
+    <p> We advise you to <a href="/contact"> Contact </a>  us if your Dog is not feeling well, or else we will need to quarentine your Dog to keep all the other dogs safe.</p>
+    <p>
+      <% Training.forEach(training => { %>
+        <h4>
+            <%= training.descryption %>
+        </h4>
+        <ul>
+           <li>Dog obstacle course running.</li>
+           <li>Training your Dog to jump through hoops.</li>
+           <li>Letting your Dog explore his surroundings.</li>
+        </ul>
+    </p>
+    <P>Or you can make your pet happy by getting them some <a href="/toys">toys</a> from our shop! </P>
+    <p>Go to <a href="/">Home!</a></p> 
+    <% }); %>
+</div>
+  

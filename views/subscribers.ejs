@@ -1,0 +1,19 @@
+<div class="list-container">
+  <% subscribers.forEach(s => { %>
+  <div class="subscriber">
+    <p>
+      <span class="item-label">Name:</span>
+      <%= s.name %>
+    </p>
+    <p>
+      <span class="item-label">Phone Number:</span>
+      <%= s.phone %>
+    </p>
+    <p>
+      <span class="item-label">Type of Pet:</span>
+      <%= s.type %>
+    </p>
+    
+  </div>
+  <% }); %>
+</div>

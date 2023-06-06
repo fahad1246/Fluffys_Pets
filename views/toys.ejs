@@ -1,0 +1,24 @@
+<div class="container">
+    
+    <div class="col-sm-6">
+        <h1 class="title">Toys for Your Pet's</h1>
+        <p>We offer many toys in-stores but right now these are the one's we have online.</p>
+        <% Toys.forEach(toys => { %>
+        <h4>
+            <%= toys.title %>
+        </h4>
+        <span>$
+            <%= toys.cost %> </span>
+            
+        <% }); %>   
+   
+            <p><br>Go to <a href="/">Home!</a></p>
+</div>
+<div class="col-sm-3">
+    <img src="pictures/dt4.jpg" alt="">
+    <img src="pictures/dt5.jpg" alt="">
+    <img src="pictures/dt6.jpg" alt="">
+    <img src="pictures/ct1.jpg" alt="">
+</div>
+
+ </div>  

@@ -1,0 +1,99 @@
+<div class="container">
+    <div class="col-sm-4">
+      <img src="pictures/cat33.jpg" alt="">
+    </div>
+    <p>Enter your Feedback!! </p>
+    <form class="subscription-form" action="/subscribe" method="post">
+     <input type="text" FeedBack="review" placeholder="Review">
+     <input type="submit" name="submit">
+     </form>
+    <!-- Code From: https://www.w3schools.com/howto/howto_css_user_rating.asp  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star half-checked"></span>
+    <br>
+    <% Rating.forEach(rating => { %>
+        <h4>
+            <%= rating.descryption %>
+        </h4>
+    <hr style="border:3px solid #000000">
+<br>
+    <div class="row">
+    <div class="side">
+        <div>5 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+        <div class="bar-5"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>80</div>
+    </div>
+    <div class="side">
+        <div>4 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+        <div class="bar-4"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>60</div>
+    </div>
+    <div class="side">
+        <div>3 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+        <div class="bar-3"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>20</div>
+    </div>
+    <div class="side">
+        <div>2 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+        <div class="bar-2"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>30</div>
+    </div>
+    <div class="side">
+        <div>1 star</div>
+    </div>
+    <div class="middle">
+        <div class="bar-container">
+        <div class="bar-1"></div>
+        </div>
+    </div>
+    <div class="side right">
+        <div>10</div>
+    </div>
+    </div> 
+    <% }); %>
+    <br>
+    <br>
+    <br>
+    <p>Go to <a href="/">Home!</a></p> 
+    
+</div>
